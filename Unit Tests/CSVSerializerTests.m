@@ -35,7 +35,7 @@
     // given
     NSMutableString *output = [[NSMutableString alloc] init];
     CSVSerializer *serializer = [[CSVSerializer alloc] initWithOutput:output];
-    NSArray *values = @[@"A", @"B"];
+    NSArray *values = @[@"A", @[], @100];
     id row = [OCMockObject mockForClass:[CSVRow class]];
     [[[row stub] andReturn:values] values];
     
@@ -43,7 +43,7 @@
     [serializer visitRow:row];
     
     // then
-    STAssertEqualObjects(output, @"A,B\n", @"");
+    STAssertEqualObjects(output, @"A,(\n),100\n", @"");
 }
 
 @end

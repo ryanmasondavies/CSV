@@ -15,7 +15,7 @@
 
 @implementation CSVSerializationTests
 
-- (void)testSerializingRow
+- (void)testSerializingRowWithNumber
 {
     CSVRow *ryan = [[CSVRow alloc] initWithValues:@[@"Ryan Davies", @20, @"England"]];
     
@@ -24,6 +24,18 @@
     [serializer serialize:ryan];
     
     NSString *expectedOutput = @"Ryan Davies,20,England\n";
+    STAssertEqualObjects(output, expectedOutput, @"Actual output did not match expected output.");
+}
+
+- (void)testSerializingRowWithDate
+{
+    CSVRow *ryan = [[CSVRow alloc] initWithValues:@[@"Ryan Davies", @20, @"England", [NSDate dateWithTimeIntervalSince1970:0]]];
+    
+    NSMutableString *output = [[NSMutableString alloc] init];
+    CSVSerializer *serializer = [[CSVSerializer alloc] initWithOutput:output];
+    [serializer serialize:ryan];
+    
+    NSString *expectedOutput = @"Ryan Davies,20,England,1970-01-01 00:00:00 +0000\n";
     STAssertEqualObjects(output, expectedOutput, @"Actual output did not match expected output.");
 }
 
