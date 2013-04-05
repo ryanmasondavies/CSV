@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CSVVisitor.h"
+@protocol CSVComponent;
 
 /** Serializes rows, that is converts rows to data in CSV format. */
 @interface CSVSerializer : NSObject <CSVVisitor>
@@ -18,5 +19,11 @@
  @return An initialized serializer.
  */
 - (id)initWithOutput:(NSMutableString *)output;
+
+/**
+ Serialize a component.
+ @param component The component to serialize.
+ */
+- (void)serialize:(id<CSVComponent>)component;
 
 @end

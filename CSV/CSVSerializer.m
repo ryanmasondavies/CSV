@@ -23,6 +23,11 @@
     return self;
 }
 
+- (void)serialize:(id<CSVComponent>)component
+{
+    [component accept:self];
+}
+
 - (void)visitRow:(CSVRow *)row
 {
     NSString *commaSeparatedValues = [[row values] componentsJoinedByString:@","];

@@ -16,16 +16,30 @@
 
 @implementation CSVSerializerTests
 
+- (void)testSerializeTellsComponentToAcceptSerializer
+{
+    // given
+    CSVSerializer *serializer = [[CSVSerializer alloc] initWithOutput:nil];
+    id component = [OCMockObject mockForProtocol:@protocol(CSVComponent)];
+    [[component expect] accept:serializer];
+    
+    // when
+    [serializer serialize:component];
+    
+    // then
+    [component verify];
+}
+
 - (void)testWhenVisitingRowAddsCommaSeparatedValuesFollowedByNewlineToOutput
 {
     // given
     NSMutableString *output = [[NSMutableString alloc] init];
     CSVSerializer *serializer = [[CSVSerializer alloc] initWithOutput:output];
-    
-    // when
     NSArray *values = @[@"A", @"B"];
     id row = [OCMockObject mockForClass:[CSVRow class]];
     [[[row stub] andReturn:values] values];
+    
+    // when
     [serializer visitRow:row];
     
     // then
