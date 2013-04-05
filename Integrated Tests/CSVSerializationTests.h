@@ -1,5 +1,5 @@
 //
-//  Integrated_Tests.h
+//  CSVSerializationTests.h
 //  Integrated Tests
 //
 //  Created by Ryan Davies on 05/04/2013.
@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface Integrated_Tests : SenTestCase
+@interface CSVSerializationTests : SenTestCase
 
 @end
