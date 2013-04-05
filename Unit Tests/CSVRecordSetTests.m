@@ -9,7 +9,6 @@
 #import <SenTestingKit/SenTestingKit.h>
 #import <OCMock/OCMock.h>
 #import "CSV.h"
-#import "CSVVisitor.h"
 
 @interface CSVRecordSetTests : SenTestCase
 @end

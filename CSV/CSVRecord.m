@@ -13,6 +13,7 @@
 
 - (void)accept:(id<CSVVisitor>)visitor
 {
+    [visitor visitRecord:self];
 }
 
 @end

@@ -18,6 +18,7 @@
 		94A03F9D170F0137009C87DC /* CSVRecordSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9C170F0137009C87DC /* CSVRecordSetTests.m */; };
 		94A03FA0170F016C009C87DC /* CSVRecordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9F170F016C009C87DC /* CSVRecordSet.m */; };
 		94A03FA6170F0680009C87DC /* CSVRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FA5170F0680009C87DC /* CSVRecord.m */; };
+		94A03FAB170F0ADC009C87DC /* CSVRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FAA170F0ADC009C87DC /* CSVRecordTests.m */; };
 		AE8585A1E77146E2A721F120 /* libPods-Unit Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F70D663A4B4B99A3733301 /* libPods-Unit Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		94A03FA5170F0680009C87DC /* CSVRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRecord.m; sourceTree = "<group>"; };
 		94A03FA7170F080A009C87DC /* CSVVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVVisitor.h; sourceTree = "<group>"; };
 		94A03FA8170F0A17009C87DC /* CSVComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVComponent.h; sourceTree = "<group>"; };
+		94A03FAA170F0ADC009C87DC /* CSVRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRecordTests.m; sourceTree = "<group>"; };
 		D5BA2348C874475BB8C0346E /* Pods-Unit Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unit Tests.xcconfig"; path = "Pods/Pods-Unit Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				94A03F9C170F0137009C87DC /* CSVRecordSetTests.m */,
+				94A03FAA170F0ADC009C87DC /* CSVRecordTests.m */,
 				94A03F7B170EFF24009C87DC /* Supporting files */,
 			);
 			path = "Unit Tests";
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A03F9D170F0137009C87DC /* CSVRecordSetTests.m in Sources */,
+				94A03FAB170F0ADC009C87DC /* CSVRecordTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +382,6 @@
 		94A03F66170EF5E0009C87DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -408,7 +411,6 @@
 		94A03F67170EF5E0009C87DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;

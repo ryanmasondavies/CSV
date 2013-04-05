@@ -6,5 +6,6 @@
 //  Copyright (c) 2013 Ryan Davies. All rights reserved.
 //
 
+#import "CSVVisitor.h"
 #import "CSVRecordSet.h"
 #import "CSVRecord.h"
