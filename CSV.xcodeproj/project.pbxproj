@@ -57,7 +57,6 @@
 		94A03F76170EFF20009C87DC /* Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
 		94A03F77170EFF20009C87DC /* Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		94A03F78170EFF20009C87DC /* Unit Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Unit Tests-Info.plist"; sourceTree = "<group>"; };
-		94A03F7D170EFF65009C87DC /* CSV-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CSV-Prefix.pch"; sourceTree = "<group>"; };
 		94A03F7E170EFF65009C87DC /* CSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSV.h; sourceTree = "<group>"; };
 		94A03F7F170EFF65009C87DC /* CSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSV.m; sourceTree = "<group>"; };
 		94A03F87170EFF90009C87DC /* Integrated Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Integrated Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,17 +152,8 @@
 			children = (
 				94A03F7E170EFF65009C87DC /* CSV.h */,
 				94A03F7F170EFF65009C87DC /* CSV.m */,
-				94A03F81170EFF69009C87DC /* Supporting files */,
 			);
 			path = CSV;
-			sourceTree = "<group>";
-		};
-		94A03F81170EFF69009C87DC /* Supporting files */ = {
-			isa = PBXGroup;
-			children = (
-				94A03F7D170EFF65009C87DC /* CSV-Prefix.pch */,
-			);
-			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 		94A03F8B170EFF90009C87DC /* Integrated Tests */ = {
@@ -415,8 +405,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/CSV.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CSV/CSV-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -427,8 +415,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/CSV.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CSV/CSV-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
