@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 @class CSVRow;
 
-/** Interface for all record visitors. */
+/** Interface for all visitors. */
 @protocol CSVVisitor <NSObject>
 
-/** Visit a record. Invoked by [CSVRecord accept:]. */
-- (void)visitRecord:(CSVRow *)record;
+/** Visit a row. Invoked by [CSVRow accept:]. */
+- (void)visitRow:(CSVRow *)row;
 
 @end

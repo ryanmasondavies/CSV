@@ -25,7 +25,7 @@
 
 - (void)accept:(id<CSVVisitor>)visitor
 {
-    [visitor visitRecord:self];
+    [visitor visitRow:self];
 }
 
 @end

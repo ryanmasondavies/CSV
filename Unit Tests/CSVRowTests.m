@@ -21,7 +21,7 @@
     // given
     CSVRow *row = [[CSVRow alloc] init];
     id visitor = [OCMockObject mockForProtocol:@protocol(CSVVisitor)];
-    [[visitor expect] visitRecord:row];
+    [[visitor expect] visitRow:row];
     
     // when
     [row accept:visitor];
