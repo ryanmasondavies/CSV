@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		94A03F47170EF5E0009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
-		94A03F4C170EF5E0009C87DC /* CSV.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 94A03F4B170EF5E0009C87DC /* CSV.h */; };
-		94A03F4E170EF5E0009C87DC /* CSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F4D170EF5E0009C87DC /* CSV.m */; };
 		94A03F56170EF5E0009C87DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F55170EF5E0009C87DC /* SenTestingKit.framework */; };
 		94A03F58170EF5E0009C87DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F57170EF5E0009C87DC /* UIKit.framework */; };
 		94A03F59170EF5E0009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
 		94A03F5C170EF5E0009C87DC /* libCSV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F43170EF5E0009C87DC /* libCSV.a */; };
-		94A03F62170EF5E0009C87DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94A03F60170EF5E0009C87DC /* InfoPlist.strings */; };
-		94A03F65170EF5E0009C87DC /* CSVTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F64170EF5E0009C87DC /* CSVTests.m */; };
+		94A03F79170EFF20009C87DC /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F77170EFF20009C87DC /* Tests.m */; };
+		94A03F80170EFF65009C87DC /* CSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F7F170EFF65009C87DC /* CSV.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +33,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				94A03F4C170EF5E0009C87DC /* CSV.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,16 +41,15 @@
 /* Begin PBXFileReference section */
 		94A03F43170EF5E0009C87DC /* libCSV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCSV.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A03F46170EF5E0009C87DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		94A03F4A170EF5E0009C87DC /* CSV-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSV-Prefix.pch"; sourceTree = "<group>"; };
-		94A03F4B170EF5E0009C87DC /* CSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSV.h; sourceTree = "<group>"; };
-		94A03F4D170EF5E0009C87DC /* CSV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSV.m; sourceTree = "<group>"; };
-		94A03F54170EF5E0009C87DC /* CSVTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSVTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A03F54170EF5E0009C87DC /* Unit Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A03F55170EF5E0009C87DC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		94A03F57170EF5E0009C87DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		94A03F5F170EF5E0009C87DC /* CSVTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSVTests-Info.plist"; sourceTree = "<group>"; };
-		94A03F61170EF5E0009C87DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		94A03F63170EF5E0009C87DC /* CSVTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVTests.h; sourceTree = "<group>"; };
-		94A03F64170EF5E0009C87DC /* CSVTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVTests.m; sourceTree = "<group>"; };
+		94A03F76170EFF20009C87DC /* Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tests.h; sourceTree = "<group>"; };
+		94A03F77170EFF20009C87DC /* Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		94A03F78170EFF20009C87DC /* Unit Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Unit Tests-Info.plist"; sourceTree = "<group>"; };
+		94A03F7D170EFF65009C87DC /* CSV-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CSV-Prefix.pch"; sourceTree = "<group>"; };
+		94A03F7E170EFF65009C87DC /* CSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSV.h; sourceTree = "<group>"; };
+		94A03F7F170EFF65009C87DC /* CSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSV.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +78,8 @@
 		94A03F3A170EF5E0009C87DC = {
 			isa = PBXGroup;
 			children = (
-				94A03F48170EF5E0009C87DC /* CSV */,
-				94A03F5D170EF5E0009C87DC /* CSVTests */,
+				94A03F7C170EFF65009C87DC /* CSV */,
+				94A03F75170EFF20009C87DC /* Unit Tests */,
 				94A03F45170EF5E0009C87DC /* Frameworks */,
 				94A03F44170EF5E0009C87DC /* Products */,
 			);
@@ -93,7 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				94A03F43170EF5E0009C87DC /* libCSV.a */,
-				94A03F54170EF5E0009C87DC /* CSVTests.octest */,
+				94A03F54170EF5E0009C87DC /* Unit Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,41 +104,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		94A03F48170EF5E0009C87DC /* CSV */ = {
+		94A03F75170EFF20009C87DC /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
-				94A03F4B170EF5E0009C87DC /* CSV.h */,
-				94A03F4D170EF5E0009C87DC /* CSV.m */,
-				94A03F49170EF5E0009C87DC /* Supporting Files */,
+				94A03F76170EFF20009C87DC /* Tests.h */,
+				94A03F77170EFF20009C87DC /* Tests.m */,
+				94A03F7B170EFF24009C87DC /* Supporting files */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		94A03F7B170EFF24009C87DC /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				94A03F78170EFF20009C87DC /* Unit Tests-Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		94A03F7C170EFF65009C87DC /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				94A03F7E170EFF65009C87DC /* CSV.h */,
+				94A03F7F170EFF65009C87DC /* CSV.m */,
+				94A03F81170EFF69009C87DC /* Supporting files */,
 			);
 			path = CSV;
 			sourceTree = "<group>";
 		};
-		94A03F49170EF5E0009C87DC /* Supporting Files */ = {
+		94A03F81170EFF69009C87DC /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				94A03F4A170EF5E0009C87DC /* CSV-Prefix.pch */,
+				94A03F7D170EFF65009C87DC /* CSV-Prefix.pch */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		94A03F5D170EF5E0009C87DC /* CSVTests */ = {
-			isa = PBXGroup;
-			children = (
-				94A03F63170EF5E0009C87DC /* CSVTests.h */,
-				94A03F64170EF5E0009C87DC /* CSVTests.m */,
-				94A03F5E170EF5E0009C87DC /* Supporting Files */,
-			);
-			path = CSVTests;
-			sourceTree = "<group>";
-		};
-		94A03F5E170EF5E0009C87DC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				94A03F5F170EF5E0009C87DC /* CSVTests-Info.plist */,
-				94A03F60170EF5E0009C87DC /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,9 +160,9 @@
 			productReference = 94A03F43170EF5E0009C87DC /* libCSV.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		94A03F53170EF5E0009C87DC /* CSVTests */ = {
+		94A03F53170EF5E0009C87DC /* Unit Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94A03F6B170EF5E0009C87DC /* Build configuration list for PBXNativeTarget "CSVTests" */;
+			buildConfigurationList = 94A03F6B170EF5E0009C87DC /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
 				94A03F4F170EF5E0009C87DC /* Sources */,
 				94A03F50170EF5E0009C87DC /* Frameworks */,
@@ -179,9 +174,9 @@
 			dependencies = (
 				94A03F5B170EF5E0009C87DC /* PBXTargetDependency */,
 			);
-			name = CSVTests;
+			name = "Unit Tests";
 			productName = CSVTests;
-			productReference = 94A03F54170EF5E0009C87DC /* CSVTests.octest */;
+			productReference = 94A03F54170EF5E0009C87DC /* Unit Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +201,7 @@
 			projectRoot = "";
 			targets = (
 				94A03F42170EF5E0009C87DC /* CSV */,
-				94A03F53170EF5E0009C87DC /* CSVTests */,
+				94A03F53170EF5E0009C87DC /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,7 +211,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03F62170EF5E0009C87DC /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03F4E170EF5E0009C87DC /* CSV.m in Sources */,
+				94A03F80170EFF65009C87DC /* CSV.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03F65170EF5E0009C87DC /* CSVTests.m in Sources */,
+				94A03F79170EFF20009C87DC /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,17 +258,6 @@
 			targetProxy = 94A03F5A170EF5E0009C87DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		94A03F60170EF5E0009C87DC /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				94A03F61170EF5E0009C87DC /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		94A03F66170EF5E0009C87DC /* Debug */ = {
@@ -363,7 +346,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSV/CSV-Prefix.pch";
-				INFOPLIST_FILE = "CSVTests/CSVTests-Info.plist";
+				INFOPLIST_FILE = "Unit Tests/Unit Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -378,7 +361,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSV/CSV-Prefix.pch";
-				INFOPLIST_FILE = "CSVTests/CSVTests-Info.plist";
+				INFOPLIST_FILE = "Unit Tests/Unit Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -403,14 +386,16 @@
 				94A03F6A170EF5E0009C87DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		94A03F6B170EF5E0009C87DC /* Build configuration list for PBXNativeTarget "CSVTests" */ = {
+		94A03F6B170EF5E0009C87DC /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94A03F6C170EF5E0009C87DC /* Debug */,
 				94A03F6D170EF5E0009C87DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
