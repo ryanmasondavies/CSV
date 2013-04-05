@@ -6,8 +6,5 @@
 //  Copyright (c) 2013 Ryan Davies. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface CSV : NSObject
-
-@end
+#import "CSVRecordSet.h"
+#import "CSVRecord.h"
