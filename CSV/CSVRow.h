@@ -19,4 +19,7 @@
  */
 - (id)initWithValues:(NSArray *)values;
 
+/** Values in a row. */
+@property (readonly) NSArray *values;
+
 @end

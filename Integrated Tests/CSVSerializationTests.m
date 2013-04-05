@@ -7,6 +7,7 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "CSV.h"
 
 @interface CSVSerializationTests : SenTestCase
 
@@ -16,9 +17,9 @@
 
 - (void)testSerializingTwoRecords
 {
-    CSVRow *header = [[CSVHeader alloc] initWithValues:@[@"Name", @"Age", @"Year"]];
-    CSVRow *ryan = [[CSVRecord alloc] initWithValues:@[@"Ryan Davies", @20, @"England"]];
-    CSVRow *john = [[CSVRecord alloc] initWithValues:@[@"John Smith", @34, @"France"]];
+    CSVRow *header = [[CSVRow alloc] initWithValues:@[@"Name", @"Age", @"Year"]];
+    CSVRow *ryan = [[CSVRow alloc] initWithValues:@[@"Ryan Davies", @20, @"England"]];
+    CSVRow *john = [[CSVRow alloc] initWithValues:@[@"John Smith", @34, @"France"]];
     CSVTable *table = [[CSVTable alloc] initWithRows:@[header, ryan, john]];
     
     NSMutableString *output = [[NSMutableString alloc] init];

@@ -19,6 +19,8 @@
 		94A03FA0170F016C009C87DC /* CSVTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9F170F016C009C87DC /* CSVTable.m */; };
 		94A03FA6170F0680009C87DC /* CSVRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FA5170F0680009C87DC /* CSVRow.m */; };
 		94A03FAB170F0ADC009C87DC /* CSVRowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FAA170F0ADC009C87DC /* CSVRowTests.m */; };
+		94A03FAE170F519D009C87DC /* CSVSerializerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FAD170F519D009C87DC /* CSVSerializerTests.m */; };
+		94A03FB1170F52BA009C87DC /* CSVSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FB0170F52BA009C87DC /* CSVSerializer.m */; };
 		AE8585A1E77146E2A721F120 /* libPods-Unit Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F70D663A4B4B99A3733301 /* libPods-Unit Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,9 @@
 		94A03FA7170F080A009C87DC /* CSVVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVVisitor.h; sourceTree = "<group>"; };
 		94A03FA8170F0A17009C87DC /* CSVComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVComponent.h; sourceTree = "<group>"; };
 		94A03FAA170F0ADC009C87DC /* CSVRowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRowTests.m; sourceTree = "<group>"; };
+		94A03FAD170F519D009C87DC /* CSVSerializerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVSerializerTests.m; sourceTree = "<group>"; };
+		94A03FAF170F52BA009C87DC /* CSVSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVSerializer.h; sourceTree = "<group>"; };
+		94A03FB0170F52BA009C87DC /* CSVSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVSerializer.m; sourceTree = "<group>"; };
 		D5BA2348C874475BB8C0346E /* Pods-Unit Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unit Tests.xcconfig"; path = "Pods/Pods-Unit Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -145,6 +150,7 @@
 			children = (
 				94A03F9C170F0137009C87DC /* CSVTableTests.m */,
 				94A03FAA170F0ADC009C87DC /* CSVRowTests.m */,
+				94A03FAD170F519D009C87DC /* CSVSerializerTests.m */,
 				94A03F7B170EFF24009C87DC /* Supporting files */,
 			);
 			path = "Unit Tests";
@@ -168,6 +174,8 @@
 				94A03F9F170F016C009C87DC /* CSVTable.m */,
 				94A03FA4170F0680009C87DC /* CSVRow.h */,
 				94A03FA5170F0680009C87DC /* CSVRow.m */,
+				94A03FAF170F52BA009C87DC /* CSVSerializer.h */,
+				94A03FB0170F52BA009C87DC /* CSVSerializer.m */,
 			);
 			path = CSV;
 			sourceTree = "<group>";
@@ -343,6 +351,7 @@
 			files = (
 				94A03FA0170F016C009C87DC /* CSVTable.m in Sources */,
 				94A03FA6170F0680009C87DC /* CSVRow.m in Sources */,
+				94A03FB1170F52BA009C87DC /* CSVSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +361,7 @@
 			files = (
 				94A03F9D170F0137009C87DC /* CSVTableTests.m in Sources */,
 				94A03FAB170F0ADC009C87DC /* CSVRowTests.m in Sources */,
+				94A03FAE170F519D009C87DC /* CSVSerializerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
