@@ -7,6 +7,7 @@
 //
 
 #import "CSVRecordSet.h"
+#import "CSVVisitor.h"
 
 @interface CSVRecordSet ()
 @property (strong, nonatomic) NSArray *records;
@@ -20,6 +21,11 @@
         [self setRecords:records];
     }
     return self;
+}
+
+- (void)accept:(id<CSVVisitor>)visitor
+{
+    [[self records] makeObjectsPerformSelector:@selector(accept:) withObject:visitor];
 }
 
 @end

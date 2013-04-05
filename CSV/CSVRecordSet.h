@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CSVComponent.h"
+@protocol CSVVisitor;
 
-@interface CSVRecordSet : NSObject
+@interface CSVRecordSet : NSObject <CSVComponent>
 
 /**
  Initialize a record set with an array of records.
