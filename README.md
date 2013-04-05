@@ -1,6 +1,8 @@
 CSV
 ===
 
+Formatting data to the comma-separated values format is a simple task, but this library aims to make it even easier.
+
 Rows are components within tables, which act as composites. A serializer visits each row, formatting as it goes.
 
 Rows are added to a table:
