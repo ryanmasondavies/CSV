@@ -14,6 +14,10 @@
 		94A03F5C170EF5E0009C87DC /* libCSV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F43170EF5E0009C87DC /* libCSV.a */; };
 		94A03F79170EFF20009C87DC /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F77170EFF20009C87DC /* Tests.m */; };
 		94A03F80170EFF65009C87DC /* CSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F7F170EFF65009C87DC /* CSV.m */; };
+		94A03F88170EFF90009C87DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F55170EF5E0009C87DC /* SenTestingKit.framework */; };
+		94A03F89170EFF90009C87DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F57170EF5E0009C87DC /* UIKit.framework */; };
+		94A03F8A170EFF90009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
+		94A03F93170EFF90009C87DC /* Integrated_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F92170EFF90009C87DC /* Integrated_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,11 @@
 		94A03F7D170EFF65009C87DC /* CSV-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CSV-Prefix.pch"; sourceTree = "<group>"; };
 		94A03F7E170EFF65009C87DC /* CSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSV.h; sourceTree = "<group>"; };
 		94A03F7F170EFF65009C87DC /* CSV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSV.m; sourceTree = "<group>"; };
+		94A03F87170EFF90009C87DC /* Integrated Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Integrated Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A03F8D170EFF90009C87DC /* Integrated Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Integrated Tests-Info.plist"; sourceTree = "<group>"; };
+		94A03F91170EFF90009C87DC /* Integrated_Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Integrated_Tests.h; sourceTree = "<group>"; };
+		94A03F92170EFF90009C87DC /* Integrated_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Integrated_Tests.m; sourceTree = "<group>"; };
+		94A03F94170EFF90009C87DC /* Integrated Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Integrated Tests-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94A03F83170EFF90009C87DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A03F88170EFF90009C87DC /* SenTestingKit.framework in Frameworks */,
+				94A03F89170EFF90009C87DC /* UIKit.framework in Frameworks */,
+				94A03F8A170EFF90009C87DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +99,7 @@
 			children = (
 				94A03F7C170EFF65009C87DC /* CSV */,
 				94A03F75170EFF20009C87DC /* Unit Tests */,
+				94A03F8B170EFF90009C87DC /* Integrated Tests */,
 				94A03F45170EF5E0009C87DC /* Frameworks */,
 				94A03F44170EF5E0009C87DC /* Products */,
 			);
@@ -90,6 +110,7 @@
 			children = (
 				94A03F43170EF5E0009C87DC /* libCSV.a */,
 				94A03F54170EF5E0009C87DC /* Unit Tests.octest */,
+				94A03F87170EFF90009C87DC /* Integrated Tests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +161,25 @@
 			name = "Supporting files";
 			sourceTree = "<group>";
 		};
+		94A03F8B170EFF90009C87DC /* Integrated Tests */ = {
+			isa = PBXGroup;
+			children = (
+				94A03F91170EFF90009C87DC /* Integrated_Tests.h */,
+				94A03F92170EFF90009C87DC /* Integrated_Tests.m */,
+				94A03F8C170EFF90009C87DC /* Supporting Files */,
+			);
+			path = "Integrated Tests";
+			sourceTree = "<group>";
+		};
+		94A03F8C170EFF90009C87DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94A03F8D170EFF90009C87DC /* Integrated Tests-Info.plist */,
+				94A03F94170EFF90009C87DC /* Integrated Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,6 +219,24 @@
 			productReference = 94A03F54170EF5E0009C87DC /* Unit Tests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		94A03F86170EFF90009C87DC /* Integrated Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94A03F95170EFF90009C87DC /* Build configuration list for PBXNativeTarget "Integrated Tests" */;
+			buildPhases = (
+				94A03F82170EFF90009C87DC /* Sources */,
+				94A03F83170EFF90009C87DC /* Frameworks */,
+				94A03F84170EFF90009C87DC /* Resources */,
+				94A03F85170EFF90009C87DC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Integrated Tests";
+			productName = "Integrated Tests";
+			productReference = 94A03F87170EFF90009C87DC /* Integrated Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +260,7 @@
 			targets = (
 				94A03F42170EF5E0009C87DC /* CSV */,
 				94A03F53170EF5E0009C87DC /* Unit Tests */,
+				94A03F86170EFF90009C87DC /* Integrated Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -214,10 +273,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		94A03F84170EFF90009C87DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		94A03F52170EF5E0009C87DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		94A03F85170EFF90009C87DC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,6 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				94A03F79170EFF20009C87DC /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94A03F82170EFF90009C87DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A03F93170EFF90009C87DC /* Integrated_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +454,36 @@
 			};
 			name = Release;
 		};
+		94A03F96170EFF90009C87DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Integrated Tests/Integrated Tests-Prefix.pch";
+				INFOPLIST_FILE = "Integrated Tests/Integrated Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		94A03F97170EFF90009C87DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Integrated Tests/Integrated Tests-Prefix.pch";
+				INFOPLIST_FILE = "Integrated Tests/Integrated Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -396,6 +513,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		94A03F95170EFF90009C87DC /* Build configuration list for PBXNativeTarget "Integrated Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94A03F96170EFF90009C87DC /* Debug */,
+				94A03F97170EFF90009C87DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
