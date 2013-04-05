@@ -15,7 +15,33 @@
 
 @implementation CSVSerializationTests
 
-- (void)testSerializingTwoRecords
+- (void)testSerializingRow
+{
+    CSVRow *ryan = [[CSVRow alloc] initWithValues:@[@"Ryan Davies", @20, @"England"]];
+    
+    NSMutableString *output = [[NSMutableString alloc] init];
+    CSVSerializer *serializer = [[CSVSerializer alloc] initWithOutput:output];
+    [serializer serialize:ryan];
+    
+    NSString *expectedOutput = @"Ryan Davies,20,England\n";
+    STAssertEqualObjects(output, expectedOutput, @"Actual output did not match expected output.");
+}
+
+- (void)testSerializingTableWithHeaderAndOneRow
+{
+    CSVRow *header = [[CSVRow alloc] initWithValues:@[@"Name", @"Age", @"Country"]];
+    CSVRow *ryan = [[CSVRow alloc] initWithValues:@[@"Ryan Davies", @20, @"England"]];
+    CSVTable *table = [[CSVTable alloc] initWithRows:@[header, ryan]];
+    
+    NSMutableString *output = [[NSMutableString alloc] init];
+    CSVSerializer *serializer = [[CSVSerializer alloc] initWithOutput:output];
+    [serializer serialize:table];
+    
+    NSString *expectedOutput = @"Name,Age,Country\nRyan Davies,20,England\n";
+    STAssertEqualObjects(output, expectedOutput, @"Actual output did not match expected output.");
+}
+
+- (void)testSerializingTableWithHeaderAndTwoRows
 {
     CSVRow *header = [[CSVRow alloc] initWithValues:@[@"Name", @"Age", @"Country"]];
     CSVRow *ryan = [[CSVRow alloc] initWithValues:@[@"Ryan Davies", @20, @"England"]];
@@ -27,7 +53,7 @@
     [serializer serialize:table];
     
     NSString *expectedOutput = @"Name,Age,Country\nRyan Davies,20,England\nJohn Smith,34,France\n";
-    STAssertEqualObjects(output, expectedOutput, @"Output did not match expected output.");
+    STAssertEqualObjects(output, expectedOutput, @"Actual output did not match expected output.");
 }
 
 @end
