@@ -15,10 +15,10 @@
 		94A03F8A170EFF90009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
 		94A03F93170EFF90009C87DC /* CSVSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F92170EFF90009C87DC /* CSVSerializationTests.m */; };
 		94A03F9A170EFFCB009C87DC /* libCSV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F43170EF5E0009C87DC /* libCSV.a */; };
-		94A03F9D170F0137009C87DC /* CSVRecordSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9C170F0137009C87DC /* CSVRecordSetTests.m */; };
-		94A03FA0170F016C009C87DC /* CSVRecordSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9F170F016C009C87DC /* CSVRecordSet.m */; };
-		94A03FA6170F0680009C87DC /* CSVRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FA5170F0680009C87DC /* CSVRecord.m */; };
-		94A03FAB170F0ADC009C87DC /* CSVRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FAA170F0ADC009C87DC /* CSVRecordTests.m */; };
+		94A03F9D170F0137009C87DC /* CSVTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9C170F0137009C87DC /* CSVTableTests.m */; };
+		94A03FA0170F016C009C87DC /* CSVTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9F170F016C009C87DC /* CSVTable.m */; };
+		94A03FA6170F0680009C87DC /* CSVRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FA5170F0680009C87DC /* CSVRow.m */; };
+		94A03FAB170F0ADC009C87DC /* CSVRowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FAA170F0ADC009C87DC /* CSVRowTests.m */; };
 		AE8585A1E77146E2A721F120 /* libPods-Unit Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F70D663A4B4B99A3733301 /* libPods-Unit Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -63,14 +63,14 @@
 		94A03F87170EFF90009C87DC /* Integrated Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Integrated Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A03F8D170EFF90009C87DC /* Integrated Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Integrated Tests-Info.plist"; sourceTree = "<group>"; };
 		94A03F92170EFF90009C87DC /* CSVSerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVSerializationTests.m; sourceTree = "<group>"; };
-		94A03F9C170F0137009C87DC /* CSVRecordSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRecordSetTests.m; sourceTree = "<group>"; };
-		94A03F9E170F016C009C87DC /* CSVRecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVRecordSet.h; sourceTree = "<group>"; };
-		94A03F9F170F016C009C87DC /* CSVRecordSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRecordSet.m; sourceTree = "<group>"; };
-		94A03FA4170F0680009C87DC /* CSVRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVRecord.h; sourceTree = "<group>"; };
-		94A03FA5170F0680009C87DC /* CSVRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRecord.m; sourceTree = "<group>"; };
+		94A03F9C170F0137009C87DC /* CSVTableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVTableTests.m; sourceTree = "<group>"; };
+		94A03F9E170F016C009C87DC /* CSVTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVTable.h; sourceTree = "<group>"; };
+		94A03F9F170F016C009C87DC /* CSVTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVTable.m; sourceTree = "<group>"; };
+		94A03FA4170F0680009C87DC /* CSVRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVRow.h; sourceTree = "<group>"; };
+		94A03FA5170F0680009C87DC /* CSVRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRow.m; sourceTree = "<group>"; };
 		94A03FA7170F080A009C87DC /* CSVVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVVisitor.h; sourceTree = "<group>"; };
 		94A03FA8170F0A17009C87DC /* CSVComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVComponent.h; sourceTree = "<group>"; };
-		94A03FAA170F0ADC009C87DC /* CSVRecordTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRecordTests.m; sourceTree = "<group>"; };
+		94A03FAA170F0ADC009C87DC /* CSVRowTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRowTests.m; sourceTree = "<group>"; };
 		D5BA2348C874475BB8C0346E /* Pods-Unit Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unit Tests.xcconfig"; path = "Pods/Pods-Unit Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -143,8 +143,8 @@
 		94A03F75170EFF20009C87DC /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
-				94A03F9C170F0137009C87DC /* CSVRecordSetTests.m */,
-				94A03FAA170F0ADC009C87DC /* CSVRecordTests.m */,
+				94A03F9C170F0137009C87DC /* CSVTableTests.m */,
+				94A03FAA170F0ADC009C87DC /* CSVRowTests.m */,
 				94A03F7B170EFF24009C87DC /* Supporting files */,
 			);
 			path = "Unit Tests";
@@ -164,10 +164,10 @@
 				94A03F7E170EFF65009C87DC /* CSV.h */,
 				94A03FA7170F080A009C87DC /* CSVVisitor.h */,
 				94A03FA8170F0A17009C87DC /* CSVComponent.h */,
-				94A03F9E170F016C009C87DC /* CSVRecordSet.h */,
-				94A03F9F170F016C009C87DC /* CSVRecordSet.m */,
-				94A03FA4170F0680009C87DC /* CSVRecord.h */,
-				94A03FA5170F0680009C87DC /* CSVRecord.m */,
+				94A03F9E170F016C009C87DC /* CSVTable.h */,
+				94A03F9F170F016C009C87DC /* CSVTable.m */,
+				94A03FA4170F0680009C87DC /* CSVRow.h */,
+				94A03FA5170F0680009C87DC /* CSVRow.m */,
 			);
 			path = CSV;
 			sourceTree = "<group>";
@@ -341,8 +341,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03FA0170F016C009C87DC /* CSVRecordSet.m in Sources */,
-				94A03FA6170F0680009C87DC /* CSVRecord.m in Sources */,
+				94A03FA0170F016C009C87DC /* CSVTable.m in Sources */,
+				94A03FA6170F0680009C87DC /* CSVRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,8 +350,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03F9D170F0137009C87DC /* CSVRecordSetTests.m in Sources */,
-				94A03FAB170F0ADC009C87DC /* CSVRecordTests.m in Sources */,
+				94A03F9D170F0137009C87DC /* CSVTableTests.m in Sources */,
+				94A03FAB170F0ADC009C87DC /* CSVRowTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

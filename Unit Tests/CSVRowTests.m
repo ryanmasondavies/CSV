@@ -1,5 +1,5 @@
 //
-//  CSVRecordTests.m
+//  CSVRowTests.m
 //  CSV
 //
 //  Created by Ryan Davies on 05/04/2013.
@@ -16,15 +16,15 @@
 
 @implementation CSVRecordTests
 
-- (void)testTellsVisitorsToVisitRecord
+- (void)testTellsVisitorsToVisitRow
 {
     // given
-    CSVRecord *record = [[CSVRecord alloc] init];
+    CSVRow *row = [[CSVRow alloc] init];
     id visitor = [OCMockObject mockForProtocol:@protocol(CSVVisitor)];
-    [[visitor expect] visitRecord:record];
+    [[visitor expect] visitRecord:row];
     
     // when
-    [record accept:visitor];
+    [row accept:visitor];
     
     // then
     [visitor verify];

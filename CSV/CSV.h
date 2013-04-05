@@ -7,5 +7,5 @@
 //
 
 #import "CSVVisitor.h"
-#import "CSVRecordSet.h"
-#import "CSVRecord.h"
+#import "CSVTable.h"
+#import "CSVRow.h"

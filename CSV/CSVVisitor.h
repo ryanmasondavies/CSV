@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-@class CSVRecord;
+@class CSVRow;
 
 /** Interface for all record visitors. */
 @protocol CSVVisitor <NSObject>
 
 /** Visit a record. Invoked by [CSVRecord accept:]. */
-- (void)visitRecord:(CSVRecord *)record;
+- (void)visitRecord:(CSVRow *)record;
 
 @end

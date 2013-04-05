@@ -16,17 +16,10 @@
 
 - (void)testSerializingTwoRecords
 {
-    CSVRecord *ryan = [[CSVRecord alloc] init];
-    [record setValue:@"Ryan Davies" forField:@"Name"];
-    [record setValue:@20 forField:@"Age"];
-    [record setValue:@"England" forField:@"Country"];
-    
-    CSVRecord *john = [[CSVRecord alloc] init];
-    [john setValue:@"John Smith" forField:@"Name"];
-    [john setValue:@34 forField:@"Age"];
-    [john setValue:@"France" forField:@"Country"];
-    
-    CSVRecordSet *recordSet = [[CSVRecordSet alloc] initWithRecords:@[ryan, john]];
+    CSVRow *header = [[CSVHeader alloc] initWithValues:@[@"Name", @"Age", @"Year"]];
+    CSVRow *ryan = [[CSVRecord alloc] initWithValues:@[@"Ryan Davies", @20, @"England"]];
+    CSVRow *john = [[CSVRecord alloc] initWithValues:@[@"John Smith", @34, @"France"]];
+    CSVTable *table = [[CSVTable alloc] initWithRows:@[header, ryan, john]];
     
     NSMutableString *output = [[NSMutableString alloc] init];
     CSVSerializer *serializer = [[CSVSerializer alloc] initWithOutput:output];
