@@ -6,7 +6,11 @@
 //  Copyright (c) 2013 Ryan Davies. All rights reserved.
 //
 
-#import "CSVSerializationTests.h"
+#import <SenTestingKit/SenTestingKit.h>
+
+@interface CSVSerializationTests : SenTestCase
+
+@end
 
 @implementation CSVSerializationTests
 

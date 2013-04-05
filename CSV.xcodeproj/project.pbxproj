@@ -58,7 +58,6 @@
 		94A03F7E170EFF65009C87DC /* CSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSV.h; sourceTree = "<group>"; };
 		94A03F87170EFF90009C87DC /* Integrated Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Integrated Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A03F8D170EFF90009C87DC /* Integrated Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Integrated Tests-Info.plist"; sourceTree = "<group>"; };
-		94A03F91170EFF90009C87DC /* CSVSerializationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSVSerializationTests.h; sourceTree = "<group>"; };
 		94A03F92170EFF90009C87DC /* CSVSerializationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSVSerializationTests.m; sourceTree = "<group>"; };
 		94A03F9C170F0137009C87DC /* CSVRecordSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVRecordSetTests.m; sourceTree = "<group>"; };
 		94A03F9E170F016C009C87DC /* CSVRecordSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVRecordSet.h; sourceTree = "<group>"; };
@@ -158,7 +157,6 @@
 		94A03F8B170EFF90009C87DC /* Integrated Tests */ = {
 			isa = PBXGroup;
 			children = (
-				94A03F91170EFF90009C87DC /* CSVSerializationTests.h */,
 				94A03F92170EFF90009C87DC /* CSVSerializationTests.m */,
 				94A03F8C170EFF90009C87DC /* Supporting Files */,
 			);
