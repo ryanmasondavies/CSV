@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		94A03F47170EF5E0009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
 		94A03F56170EF5E0009C87DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F55170EF5E0009C87DC /* SenTestingKit.framework */; };
-		94A03F58170EF5E0009C87DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F57170EF5E0009C87DC /* UIKit.framework */; };
 		94A03F59170EF5E0009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
 		94A03F5C170EF5E0009C87DC /* libCSV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F43170EF5E0009C87DC /* libCSV.a */; };
 		94A03F79170EFF20009C87DC /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F77170EFF20009C87DC /* Tests.m */; };
 		94A03F80170EFF65009C87DC /* CSV.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F7F170EFF65009C87DC /* CSV.m */; };
 		94A03F88170EFF90009C87DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F55170EF5E0009C87DC /* SenTestingKit.framework */; };
-		94A03F89170EFF90009C87DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F57170EF5E0009C87DC /* UIKit.framework */; };
 		94A03F8A170EFF90009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
 		94A03F93170EFF90009C87DC /* Integrated_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F92170EFF90009C87DC /* Integrated_Tests.m */; };
+		94A03F9A170EFFCB009C87DC /* libCSV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F43170EF5E0009C87DC /* libCSV.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		94A03F5A170EF5E0009C87DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94A03F3B170EF5E0009C87DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94A03F42170EF5E0009C87DC;
+			remoteInfo = CSV;
+		};
+		94A03F98170EFFC1009C87DC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 94A03F3B170EF5E0009C87DC /* Project object */;
 			proxyType = 1;
@@ -74,10 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03F56170EF5E0009C87DC /* SenTestingKit.framework in Frameworks */,
-				94A03F58170EF5E0009C87DC /* UIKit.framework in Frameworks */,
-				94A03F59170EF5E0009C87DC /* Foundation.framework in Frameworks */,
 				94A03F5C170EF5E0009C87DC /* libCSV.a in Frameworks */,
+				94A03F59170EF5E0009C87DC /* Foundation.framework in Frameworks */,
+				94A03F56170EF5E0009C87DC /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03F88170EFF90009C87DC /* SenTestingKit.framework in Frameworks */,
-				94A03F89170EFF90009C87DC /* UIKit.framework in Frameworks */,
+				94A03F9A170EFFCB009C87DC /* libCSV.a in Frameworks */,
 				94A03F8A170EFF90009C87DC /* Foundation.framework in Frameworks */,
+				94A03F88170EFF90009C87DC /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +236,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				94A03F99170EFFC1009C87DC /* PBXTargetDependency */,
 			);
 			name = "Integrated Tests";
 			productName = "Integrated Tests";
@@ -343,6 +349,11 @@
 			isa = PBXTargetDependency;
 			target = 94A03F42170EF5E0009C87DC /* CSV */;
 			targetProxy = 94A03F5A170EF5E0009C87DC /* PBXContainerItemProxy */;
+		};
+		94A03F99170EFFC1009C87DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94A03F42170EF5E0009C87DC /* CSV */;
+			targetProxy = 94A03F98170EFFC1009C87DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
