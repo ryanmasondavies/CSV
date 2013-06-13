@@ -33,6 +33,8 @@
 {
     if (self = [self init]) {
         [self setOutput:output];
+        self.separatorChar = @",";
+        self.lineBreak = @"\n";
     }
     return self;
 }
@@ -44,9 +46,9 @@
 
 - (void)visitRow:(CSVRow *)row
 {
-    NSString *commaSeparatedValues = [[row values] componentsJoinedByString:@","];
+    NSString *commaSeparatedValues = [[row values] componentsJoinedByString:self.separatorChar];
     [[self output] appendString:commaSeparatedValues];
-    [[self output] appendString:@"\n"];
+    [[self output] appendString:self.lineBreak];
 }
 
 @end
