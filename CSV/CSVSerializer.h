@@ -28,6 +28,16 @@
 @interface CSVSerializer : NSObject <CSVVisitor>
 
 /**
+ * Set a char separating the values. Default value is ','.
+ **/
+@property (nonatomic, strong) NSString *separatorChar;
+
+/**
+ * Sets line breaks for different systems. Default value is '\n'.
+ */
+@property (nonatomic, strong) NSString *lineBreak;
+
+/**
  Initialize a serializer.
  @param output The output of the serializer.
  @return An initialized serializer.
