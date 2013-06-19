@@ -31,7 +31,7 @@ Importing this into Excel or Numbers results in a properly formatted spreadsheet
 Installation
 ============
 
-CSV is installed using [CocoaPods](http://github.com/CocoaPods/CocoaPods) by adding `pod 'CSV', '~> 0.0.1'` to your project's Podfile.
+CSV is installed using [CocoaPods](http://github.com/CocoaPods/CocoaPods) by adding `pod 'CSV', '~> 0.0.2'` to your project's Podfile.
 
 License
 =======
