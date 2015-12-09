@@ -7,55 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		94A03F47170EF5E0009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
+		542CF8421C1878830001C602 /* CSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 542CF8411C1878830001C602 /* CSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		542CF8471C1878910001C602 /* CSVTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9F170F016C009C87DC /* CSVTable.m */; };
+		542CF8481C1878910001C602 /* CSVRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FA5170F0680009C87DC /* CSVRow.m */; };
+		542CF8491C1878910001C602 /* CSVSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FB0170F52BA009C87DC /* CSVSerializer.m */; };
 		94A03F56170EF5E0009C87DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F55170EF5E0009C87DC /* SenTestingKit.framework */; };
 		94A03F59170EF5E0009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
-		94A03F5C170EF5E0009C87DC /* libCSV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F43170EF5E0009C87DC /* libCSV.a */; };
 		94A03F88170EFF90009C87DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F55170EF5E0009C87DC /* SenTestingKit.framework */; };
 		94A03F8A170EFF90009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
 		94A03F93170EFF90009C87DC /* CSVSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F92170EFF90009C87DC /* CSVSerializationTests.m */; };
-		94A03F9A170EFFCB009C87DC /* libCSV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F43170EF5E0009C87DC /* libCSV.a */; };
 		94A03F9D170F0137009C87DC /* CSVTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9C170F0137009C87DC /* CSVTableTests.m */; };
-		94A03FA0170F016C009C87DC /* CSVTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9F170F016C009C87DC /* CSVTable.m */; };
-		94A03FA6170F0680009C87DC /* CSVRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FA5170F0680009C87DC /* CSVRow.m */; };
 		94A03FAB170F0ADC009C87DC /* CSVRowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FAA170F0ADC009C87DC /* CSVRowTests.m */; };
 		94A03FAE170F519D009C87DC /* CSVSerializerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FAD170F519D009C87DC /* CSVSerializerTests.m */; };
-		94A03FB1170F52BA009C87DC /* CSVSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FB0170F52BA009C87DC /* CSVSerializer.m */; };
 		AE8585A1E77146E2A721F120 /* libPods-Unit Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F70D663A4B4B99A3733301 /* libPods-Unit Tests.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		94A03F5A170EF5E0009C87DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 94A03F3B170EF5E0009C87DC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 94A03F42170EF5E0009C87DC;
-			remoteInfo = CSV;
-		};
-		94A03F98170EFFC1009C87DC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 94A03F3B170EF5E0009C87DC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 94A03F42170EF5E0009C87DC;
-			remoteInfo = CSV;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		94A03F41170EF5E0009C87DC /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		542CF83F1C1878830001C602 /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		542CF8411C1878830001C602 /* CSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSV.h; sourceTree = "<group>"; };
+		542CF8431C1878830001C602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76F70D663A4B4B99A3733301 /* libPods-Unit Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Unit Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		94A03F43170EF5E0009C87DC /* libCSV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCSV.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A03F46170EF5E0009C87DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		94A03F54170EF5E0009C87DC /* Unit Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A03F55170EF5E0009C87DC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -80,11 +51,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		94A03F40170EF5E0009C87DC /* Frameworks */ = {
+		542CF83B1C1878830001C602 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03F47170EF5E0009C87DC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03F5C170EF5E0009C87DC /* libCSV.a in Frameworks */,
 				94A03F59170EF5E0009C87DC /* Foundation.framework in Frameworks */,
 				94A03F56170EF5E0009C87DC /* SenTestingKit.framework in Frameworks */,
 				AE8585A1E77146E2A721F120 /* libPods-Unit Tests.a in Frameworks */,
@@ -103,7 +72,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03F9A170EFFCB009C87DC /* libCSV.a in Frameworks */,
 				94A03F8A170EFF90009C87DC /* Foundation.framework in Frameworks */,
 				94A03F88170EFF90009C87DC /* SenTestingKit.framework in Frameworks */,
 			);
@@ -112,12 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		542CF8401C1878830001C602 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				542CF8411C1878830001C602 /* CSV.h */,
+				542CF8431C1878830001C602 /* Info.plist */,
+			);
+			path = CSV;
+			sourceTree = "<group>";
+		};
 		94A03F3A170EF5E0009C87DC = {
 			isa = PBXGroup;
 			children = (
 				94A03F7C170EFF65009C87DC /* CSV */,
 				94A03F75170EFF20009C87DC /* Unit Tests */,
 				94A03F8B170EFF90009C87DC /* Integrated Tests */,
+				542CF8401C1878830001C602 /* CSV */,
 				94A03F45170EF5E0009C87DC /* Frameworks */,
 				94A03F44170EF5E0009C87DC /* Products */,
 				D5BA2348C874475BB8C0346E /* Pods-Unit Tests.xcconfig */,
@@ -127,9 +105,9 @@
 		94A03F44170EF5E0009C87DC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				94A03F43170EF5E0009C87DC /* libCSV.a */,
 				94A03F54170EF5E0009C87DC /* Unit Tests.octest */,
 				94A03F87170EFF90009C87DC /* Integrated Tests.octest */,
+				542CF83F1C1878830001C602 /* CSV.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,14 +177,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		542CF83C1C1878830001C602 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				542CF8421C1878830001C602 /* CSV.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		94A03F42170EF5E0009C87DC /* CSV */ = {
+		542CF83E1C1878830001C602 /* CSV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 94A03F68170EF5E0009C87DC /* Build configuration list for PBXNativeTarget "CSV" */;
+			buildConfigurationList = 542CF8441C1878830001C602 /* Build configuration list for PBXNativeTarget "CSV" */;
 			buildPhases = (
-				94A03F3F170EF5E0009C87DC /* Sources */,
-				94A03F40170EF5E0009C87DC /* Frameworks */,
-				94A03F41170EF5E0009C87DC /* CopyFiles */,
+				542CF83A1C1878830001C602 /* Sources */,
+				542CF83B1C1878830001C602 /* Frameworks */,
+				542CF83C1C1878830001C602 /* Headers */,
+				542CF83D1C1878830001C602 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -214,8 +204,8 @@
 			);
 			name = CSV;
 			productName = CSV;
-			productReference = 94A03F43170EF5E0009C87DC /* libCSV.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = 542CF83F1C1878830001C602 /* CSV.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		94A03F53170EF5E0009C87DC /* Unit Tests */ = {
 			isa = PBXNativeTarget;
@@ -230,12 +220,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				94A03F5B170EF5E0009C87DC /* PBXTargetDependency */,
 			);
 			name = "Unit Tests";
 			productName = CSVTests;
 			productReference = 94A03F54170EF5E0009C87DC /* Unit Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		94A03F86170EFF90009C87DC /* Integrated Tests */ = {
 			isa = PBXNativeTarget;
@@ -249,12 +238,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				94A03F99170EFFC1009C87DC /* PBXTargetDependency */,
 			);
 			name = "Integrated Tests";
 			productName = "Integrated Tests";
 			productReference = 94A03F87170EFF90009C87DC /* Integrated Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -262,8 +250,14 @@
 		94A03F3B170EF5E0009C87DC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastTestingUpgradeCheck = 0710;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Ryan Davies";
+				TargetAttributes = {
+					542CF83E1C1878830001C602 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
 			};
 			buildConfigurationList = 94A03F3E170EF5E0009C87DC /* Build configuration list for PBXProject "CSV" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -277,14 +271,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				94A03F42170EF5E0009C87DC /* CSV */,
 				94A03F53170EF5E0009C87DC /* Unit Tests */,
 				94A03F86170EFF90009C87DC /* Integrated Tests */,
+				542CF83E1C1878830001C602 /* CSV */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		542CF83D1C1878830001C602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		94A03F51170EF5E0009C87DC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,13 +346,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		94A03F3F170EF5E0009C87DC /* Sources */ = {
+		542CF83A1C1878830001C602 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94A03FA0170F016C009C87DC /* CSVTable.m in Sources */,
-				94A03FA6170F0680009C87DC /* CSVRow.m in Sources */,
-				94A03FB1170F52BA009C87DC /* CSVSerializer.m in Sources */,
+				542CF8471C1878910001C602 /* CSVTable.m in Sources */,
+				542CF8481C1878910001C602 /* CSVRow.m in Sources */,
+				542CF8491C1878910001C602 /* CSVSerializer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,20 +376,84 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		94A03F5B170EF5E0009C87DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 94A03F42170EF5E0009C87DC /* CSV */;
-			targetProxy = 94A03F5A170EF5E0009C87DC /* PBXContainerItemProxy */;
-		};
-		94A03F99170EFFC1009C87DC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 94A03F42170EF5E0009C87DC /* CSV */;
-			targetProxy = 94A03F98170EFFC1009C87DC /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
+		542CF8451C1878830001C602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CSV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = de.apploft.CSV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		542CF8461C1878830001C602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = CSV/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = de.apploft.CSV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		94A03F66170EF5E0009C87DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -437,26 +502,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		94A03F69170EF5E0009C87DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/CSV.dst;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		94A03F6A170EF5E0009C87DC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/CSV.dst;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -517,20 +562,19 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		542CF8441C1878830001C602 /* Build configuration list for PBXNativeTarget "CSV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				542CF8451C1878830001C602 /* Debug */,
+				542CF8461C1878830001C602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		94A03F3E170EF5E0009C87DC /* Build configuration list for PBXProject "CSV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				94A03F66170EF5E0009C87DC /* Debug */,
 				94A03F67170EF5E0009C87DC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		94A03F68170EF5E0009C87DC /* Build configuration list for PBXNativeTarget "CSV" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				94A03F69170EF5E0009C87DC /* Debug */,
-				94A03F6A170EF5E0009C87DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
