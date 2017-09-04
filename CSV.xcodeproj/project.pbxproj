@@ -11,6 +11,11 @@
 		542CF8471C1878910001C602 /* CSVTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9F170F016C009C87DC /* CSVTable.m */; };
 		542CF8481C1878910001C602 /* CSVRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FA5170F0680009C87DC /* CSVRow.m */; };
 		542CF8491C1878910001C602 /* CSVSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FB0170F52BA009C87DC /* CSVSerializer.m */; };
+		544914F91F5D66FD008B56C2 /* CSVVisitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A03FA7170F080A009C87DC /* CSVVisitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		544914FA1F5D6704008B56C2 /* CSVComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A03FA8170F0A17009C87DC /* CSVComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		544914FB1F5D6704008B56C2 /* CSVTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A03F9E170F016C009C87DC /* CSVTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		544914FC1F5D670A008B56C2 /* CSVRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A03FA4170F0680009C87DC /* CSVRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		544914FD1F5D670A008B56C2 /* CSVSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A03FAF170F52BA009C87DC /* CSVSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		94A03F56170EF5E0009C87DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F55170EF5E0009C87DC /* SenTestingKit.framework */; };
 		94A03F59170EF5E0009C87DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F46170EF5E0009C87DC /* Foundation.framework */; };
 		94A03F88170EFF90009C87DC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A03F55170EF5E0009C87DC /* SenTestingKit.framework */; };
@@ -182,7 +187,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544914FB1F5D6704008B56C2 /* CSVTable.h in Headers */,
+				544914FD1F5D670A008B56C2 /* CSVSerializer.h in Headers */,
+				544914F91F5D66FD008B56C2 /* CSVVisitor.h in Headers */,
+				544914FA1F5D6704008B56C2 /* CSVComponent.h in Headers */,
 				542CF8421C1878830001C602 /* CSV.h in Headers */,
+				544914FC1F5D670A008B56C2 /* CSVRow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +579,7 @@
 				542CF8461C1878830001C602 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94A03F3E170EF5E0009C87DC /* Build configuration list for PBXProject "CSV" */ = {
 			isa = XCConfigurationList;
