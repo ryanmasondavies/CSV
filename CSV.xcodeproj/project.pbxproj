@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		542CF8421C1878830001C602 /* CSV.h in Headers */ = {isa = PBXBuildFile; fileRef = 542CF8411C1878830001C602 /* CSV.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		542CF8471C1878910001C602 /* CSVTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03F9F170F016C009C87DC /* CSVTable.m */; };
 		542CF8481C1878910001C602 /* CSVRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FA5170F0680009C87DC /* CSVRow.m */; };
 		542CF8491C1878910001C602 /* CSVSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 94A03FB0170F52BA009C87DC /* CSVSerializer.m */; };
@@ -29,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		542CF83F1C1878830001C602 /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CSV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		542CF8411C1878830001C602 /* CSV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSV.h; sourceTree = "<group>"; };
 		542CF8431C1878830001C602 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76F70D663A4B4B99A3733301 /* libPods-Unit Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Unit Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94A03F46170EF5E0009C87DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,22 +82,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		542CF8401C1878830001C602 /* CSV */ = {
-			isa = PBXGroup;
-			children = (
-				542CF8411C1878830001C602 /* CSV.h */,
-				542CF8431C1878830001C602 /* Info.plist */,
-			);
-			path = CSV;
-			sourceTree = "<group>";
-		};
 		94A03F3A170EF5E0009C87DC = {
 			isa = PBXGroup;
 			children = (
 				94A03F7C170EFF65009C87DC /* CSV */,
 				94A03F75170EFF20009C87DC /* Unit Tests */,
 				94A03F8B170EFF90009C87DC /* Integrated Tests */,
-				542CF8401C1878830001C602 /* CSV */,
 				94A03F45170EF5E0009C87DC /* Frameworks */,
 				94A03F44170EF5E0009C87DC /* Products */,
 			);
@@ -157,6 +145,7 @@
 				94A03FA5170F0680009C87DC /* CSVRow.m */,
 				94A03FAF170F52BA009C87DC /* CSVSerializer.h */,
 				94A03FB0170F52BA009C87DC /* CSVSerializer.m */,
+				542CF8431C1878830001C602 /* Info.plist */,
 			);
 			path = CSV;
 			sourceTree = "<group>";
@@ -189,7 +178,6 @@
 				544914FD1F5D670A008B56C2 /* CSVSerializer.h in Headers */,
 				544914F91F5D66FD008B56C2 /* CSVVisitor.h in Headers */,
 				544914FA1F5D6704008B56C2 /* CSVComponent.h in Headers */,
-				542CF8421C1878830001C602 /* CSV.h in Headers */,
 				544914FC1F5D670A008B56C2 /* CSVRow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
