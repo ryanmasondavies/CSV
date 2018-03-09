@@ -52,7 +52,6 @@
 		94A03FAD170F519D009C87DC /* CSVSerializerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVSerializerTests.m; sourceTree = "<group>"; };
 		94A03FAF170F52BA009C87DC /* CSVSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSVSerializer.h; sourceTree = "<group>"; };
 		94A03FB0170F52BA009C87DC /* CSVSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSVSerializer.m; sourceTree = "<group>"; };
-		D5BA2348C874475BB8C0346E /* Pods-Unit Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Unit Tests.xcconfig"; path = "Pods/Pods-Unit Tests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +102,6 @@
 				542CF8401C1878830001C602 /* CSV */,
 				94A03F45170EF5E0009C87DC /* Frameworks */,
 				94A03F44170EF5E0009C87DC /* Products */,
-				D5BA2348C874475BB8C0346E /* Pods-Unit Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -517,7 +515,6 @@
 		};
 		94A03F6C170EF5E0009C87DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5BA2348C874475BB8C0346E /* Pods-Unit Tests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -531,7 +528,6 @@
 		};
 		94A03F6D170EF5E0009C87DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5BA2348C874475BB8C0346E /* Pods-Unit Tests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
