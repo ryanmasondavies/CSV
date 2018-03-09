@@ -281,9 +281,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				542CF83E1C1878830001C602 /* CSV */,
 				94A03F53170EF5E0009C87DC /* Unit Tests */,
 				94A03F86170EFF90009C87DC /* Integrated Tests */,
-				542CF83E1C1878830001C602 /* CSV */,
 			);
 		};
 /* End PBXProject section */
