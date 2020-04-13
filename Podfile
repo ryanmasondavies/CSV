@@ -1,5 +1,5 @@
 platform :ios, '5.0'
 
-target 'Unit Tests', :exclusive => true do
+target 'Unit Tests' do
   pod 'OCMock'
 end
